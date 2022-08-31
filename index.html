@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Index style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+	<title></title>
+	<style type="text/css">
+
+.navbar{
+    position:;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 0;
+    z-index: 999;
+    position: absolute;
+
+    }
+
+.navbar-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BF39F1;
+
+    }
+
+.nav-items{
+   float: left ;
+   border-right:1px solid #bbb;
+   }
+
+.nav-link{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.nav-link:hover:not(active){
+	color: black;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  color:black;
+  background-color: #BF39F1 ;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-bottom: 1px solid #bbb;
+}
+
+
+
+.dropdown-content :hover {
+  background-color: #BF39F1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content .nav-link{
+    border-bottom: 1px solid #555;
+}
+
+
+/*Slide Show*/
+
+
+{box-sizing: border-box}
+.mySlides1 {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 3000px;
+  position: ;
+  margin: auto;
+  max-height: 1000px;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 30px;
+  margin-top: -22px;
+  color: #BF39F1;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: #BF39F1;
+  color: black;
+}
+
+
+/*Body*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 760px;
+  
+  
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* icons*/
+.fa{
+  font-size: 70px;
+  color: white;
+  vertical-align: middle;
+}
+.row-head{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.row-one-text{
+  text-align: center;
+  color: white;
+  font-weight: ;
+  text-transform:;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.row-one-hr1{
+  width: 75%;
+  border-top: 1px solid red;
+  margin: auto;
+  margin-top: 10px;
+
+}
+
+/*Form*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: #BF39F1 ;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.text-1-head{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #BF39F1;
+  font-size: 45px;
+  font-weight: bold;
+}
+.text-1-head-2{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+}
+.text-1-hr{
+  border: 2px solid #D0CDD1;
+  border-radius: 5px;
+  width: 20%;
+  margin: auto;
+}
+.text-1-in{
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column-2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 560px; 
+}
+
+
+.row-2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column-2 {
+    width: 100%;
+  }
+}
+.pha-h{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #BF39F1;
+  margin-left: 200px;
+  margin-top: 170px;
+}
+.pha-h2{
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 200px;
+}
+.pha-1-in{
+  margin-left: 200px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #7F7D80;
+}
+.pha-r{
+  font-size: 30px;
+  margin-top: 170px;
+  color: #BF39F1;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-weight: bold;
+
+}
+.pha-r2{
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+.pha-r2-in{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #7F7D80;
+  margin-right: 200px;
+}
+.responsive{
+  height: auto;
+  width: 100%;
+}
+
+/*Footer*/
+
+*{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        .main-wrap{
+            width: 100%;
+            background: #fff;
+        }
+        .footer-wrap{
+            position: relative;
+            margin-top:;
+            width:100%;
+            padding:40px 180px;
+            background: rgb(25, 24, 24);
+        }
+        .footer-wrap-1{
+            display: flex;
+        }
+        .footer-section{
+            width:33.3%;
+            display:block;
+            padding:25px 15px;
+        }
+        .footer-section:last-of-type{
+            width:34%;
+        }
+        .footer-section p{
+            color:#fff;
+            font-size: 16px;
+        }
+        .footer-section h1{
+            font-size:22px;
+            color:rgb(125, 61, 155);
+            margin-bottom:8px;
+            padding: 12px 0px;
+        }
+        .footer-section h1 hr {
+            background-color: rgb(55, 54, 55);
+            width: 70px;
+            height: 4px;
+        }
+        .footer-section a{
+            color:#fff;
+            display: block;
+            text-decoration: none;
+            padding:10px 0px;
+    
+        }
+        .line{
+            margin-top:20px;
+            width:100%;
+            height:1px;;
+            background: rgb(121, 120, 120);
+        }
+        .social-link .fa{
+            
+            font-size: 40px;
+            background-color: rgb(25, 24, 24);
+            color: #ABAAAB;
+            text-decoration: none;
+        
+        }
+
+        .footer-bottom{
+            background: rgb(25, 24, 24);
+            width:100%;
+            padding:20px;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            font-size:13px;
+        }
+        .footer-bottom a{
+            color: #fff;
+            font-size:13px;
+            margin-left:20px;
+            text-decoration:none;
+        }
+        .first-box{
+            margin-left: 20px;
+        }
+        .secend-box{
+            margin-left: 20px;
+        }
+        .last-box{
+            margin-right:20px;
+        }
+
+
+</style>	
+
+</head>
+<body>
+   <! -- Navigation Bar -->
+	<nav class="navbar">
+		<ul class="navbar-nav">
+  			<li class="nav-items"><a href="index.html" class="nav-link">Home</a></li>
+  			<li class="nav-items  dropdown"><a href="services.html" class="nav-link">Services</a>
+    
+                <div class="dropdown-content">
+                  <a href="servicesGENERALDENTISTRY.html" class="nav-link">GENARAL DENTISTRY</a>
+                  <a href="servicesCOSMETICDENTISTRY.html" class="nav-link">COSMATIC DENTISTRY</a>
+                  <a href="#" class="nav-link">PAEDIATRIC DENTISTRY</a>
+                  <a href="#" class="nav-link">ORTHODONTICS</a>
+                  <a href="#" class="nav-link">INVISALIGN</a>
+                  <a href="servicesMEDICARECDBS.html" class="nav-link">MEDICAGE COBS</a>
+                  <a href="servicesCOSTSANDSPECIALOFFERS.html" class="nav-link">COSTS AND SPECIAL OFFERS</a>
+                  <a href="#" class="nav-link">MYOBRACE MELBOURNE</a>  
+            </li>
+  			<li class="nav-items"><a href="tips.html" class="nav-link">TIPS & ADVICE</a></li>
+  			<li class="nav-items"><a href="aboutus.html" class="nav-link">ABOUT US</a></li>
+  			<li class="nav-items"><a href="contact.html" class="nav-link">CONTACT</a></li>	
+        </ul>
+    </nav>
+    <br>
+
+     <! -- Slide Show -->
+    <img src="img/logo01.png" style="position:absolute;padding-top: 50px;padding-left: 700px; ">
+    <br>
+    <br>
+    <div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="img/bg001.jpg" style="width: 1504px; height: 570px;" class="responsive">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img/bg002.jpg" style="width:1504px; height: 570px;">
+  </div>
+
+  <div class="mySlides1">
+    <img src="img/bg003.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+ <script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+</div>
+
+ <! -- Details Of Dental Center -->
+<div class="row">
+  <div class="column" style="background-color:#BF39F1;">
+    <br>
+    <center>
+    <i class="fa fa-clock-o"></i>
+    </center>
+      <br>
+        <div class="row-head">
+        OPENING HOURS
+      </div>
+      <br>
+
+      <div class="row-one-text">
+         Monday: 9.00am – 5:00pm
+         <br>
+         <hr class="row-one-hr1">
+         <br>
+         Tuesday:9.00am – 5:00pm
+         <br>
+         <hr class="row-one-hr1">
+         <br>
+         Wednesday:9.00am – 5:00pm
+         <br>
+         <hr class="row-one-hr1">
+         <br>
+         Thursday:9.00am – 5.00pm
+         <br>
+         <hr class="row-one-hr1">
+         <br>
+         Friday:9.00am – 2.00pm
+         <br>
+         <hr class="row-one-hr1">
+         <br>
+         Saturday:9.00am – 2:00pm
+         <br>
+         <hr class="row-one-hr1">
+         <br>
+         Sunday:Closed
+         <br>
+         <hr class="row-one-hr1">
+         <br>
+        After hour appointments are
+        <br><br>
+        available
+        <br><br><br>
+        Call 9544 1222 to confirm
+        <br><br>
+        availability
+        <br><br><br>
+        We are closed all public holidays
+
+      </div>    
+
+
+  </div>
+  <div class="column" style="background-color:#9F1FCF;">
+    <br>
+    <center>
+    <i class="fa fa-medkit"></i>
+    </center>
+    <br>
+    <div class="row-head">
+      TOOTHACHE? DENTAL PAIN?
+      <br>
+      GENERAL ENQUIRIES?
+      </div>
+    <div class="row-one-text">
+      <br><br>
+      Please call
+      <br><br>
+      (03) 9544 1222
+      <br><br><br>
+      Email enquiries:
+      <br><br>
+      contact@huntingdaledc.com.au
+    </div>
+    <br>
+
+
+    <div class="form-con">
+  <form action="/action_page.php">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="Name" placeholder="Your Name*">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="Email" placeholder="Your Email*">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="Phone" placeholder="Phone*">
+
+    <label for="subject"></label>
+    <textarea id="subject" name="Massage" placeholder="Your Message" style="height:100px"></textarea>
+    <center>
+    <input type="submit" value="Send">
+  </center>
+  </form>
+</div>
+
+
+  </div>
+  <div class="column" style="background-color:#9812CA;">
+    <br>
+    <center>
+    <i class="fa fa-calendar-check-o"></i>
+    </center>
+    <br>
+    <div class="row-head">
+      INTERESTED IN BRACES/INVISALIGN?
+    </div>
+     <div class="row-one-text">
+      <br><br>
+      But unsure of what to expect?
+      <br><br><br>
+      At Huntingdale Dental Centre we
+      <br><br>
+      offer Free Orthodontic
+      <br><br>
+      Consultations to give you an
+      <br><br>
+      opportunity to discuss what
+      <br><br>
+      you want to achieve and how
+      <br><br>
+      we can help achieve it
+      <br>
+      Let our trusted dental team
+      <br><br>
+      guide you through what
+      <br>
+      options you have to improve
+      <br><br>
+      your smile
+      <br>
+      Book now for your free consult
+      <br><br>
+      today
+     </div>
+  </div>
+
+  <div class="column" style="background-color:#9C2CC6;">
+    <br>
+    <center>
+    <i class="fa fa-map-marker"></i>
+    </center>
+    <br>
+    <div class="row-head">
+      LOCATION MAP
+    </div>
+    <br><br>
+    <center>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6295.733256448139!2d145.090936!3d-37.91018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb06aaf953d9d27c9!2sOakleigh%20Smiles%20(formerly%20Huntingdale%20Dental%20Centre)!5e0!3m2!1sen!2sin!4v1657792382393!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </center>
+  </div>
+</div>
+<br><br>
+
+<div class="text-1-head">
+     HUNTINGDALE
+</div>
+<div class="text-1-head-2">
+    DENTAL CENTRE
+</div>
+<hr class="text-1-hr">
+<br><br>
+<div class="text-1-in">
+  Dentistry is our passion
+<br><br>
+We strive to achieve the best results with our professional expertise to reach your smile aspirations
+<br><br>
+We practice all aspects of dentistry – including general and aesthetic dentistry, orthodontics, prosthodontic replacement of teeth (including implants) and child-friendly paediatric dentistry.
+<br><br>
+What makes our team at Huntingdale Dental Centre different is the care and time we will take to make your dental visit an enjoyable one.
+<br><br>
+We welcome you to consider our services.
+</div>
+
+<div class="row-2">
+  <div class="column-2">
+    <div class="pha-h">
+      OUR
+    </div>
+    <div class="pha-h2">
+      ADVICE
+    </div>
+    <br>
+    <div class="pha-1-in">
+      We believe that prevention is better than the cure itself.
+      <br><br>
+
+In order to maintain your healthy smile, our dentists recommend regular 6-monthly dental checkups to detect and treat minor problems early before they become major and more costly issues.
+    </div>
+
+  </div>
+  <div class="column-2" >
+   <img src="img/home004.jpg" height="550px" width="490px">
+
+  </div>
+  <div class="column-2" >
+    <div class="pha-r">
+      OUR
+    </div>
+    <div class="pha-r2">
+      SERVICE
+    </div>
+    <br>
+    <div class="pha-r2-in">
+      When you meet our team at Huntingdale Dental Centre, you are guaranteed the best outcome.
+      <br><br>
+
+We will take the time to listen to your concerns, discuss what will work for you and will spare no expense when it comes to diagnosing and caring for your oral health.
+    </div>
+
+  <! -- Footer Section -->
+  </div>
+</div>
+ <div class="main-wrap">
+
+        <div class="footer-wrap">
+
+            <div class="footer-wrap-1">
+
+                <div class="footer-section">
+
+                    <div class="">
+                        <h1>SERVICES<hr></h1>
+                     </div>
+
+                    <div class="">
+                                
+                        <a id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" title="General Dentistry" href="https://www.huntingdaledc.com.au/general-dentistry/">General Dentistry</a>
+                        <hr>
+
+                        <a  title="Cosmetic Dentistry" href="https://www.huntingdaledc.com.au/cosmetic-dentistry/">Cosmetic Dentistry</a>
+                        <hr>
+                                    
+                        <a  title="Paediatric Dentistry" href="https://www.huntingdaledc.com.au/paediatric-dentistry/">Paediatric Dentistry</a>
+                        <hr>
+                            
+                        <a title="Orthodontics" href="https://www.huntingdaledc.com.au/orthodontics/">Orthodontics</a>
+                        <hr>
+                                    
+                        <a title="Invisalign" href="https://www.huntingdaledc.com.au/invisalign/">Invisalign</a>
+                        <hr>
+                                
+                        <a title="Medicare Cdbs" href="https://www.huntingdaledc.com.au/medicare-cdbs/">Medicare Cdbs</a>
+                        <hr>
+                                    
+                        <a title="Myobrace Melbourne" href="https://www.huntingdaledc.com.au/myobrace-melbourne/">Myobrace Melbourne</a>
+                        <hr>
+   
+                    </div> 
+
+                </div>
+
+                <div class="footer-section">
+
+                    <div class="">
+                        <h1>OUR INFORMATION<hr></h1>
+                    </div>
+
+                    <div class="">
+                                
+                        <a title="Home" href="https://www.huntingdaledc.com.au/" aria-current="page">Home</a>
+                        <hr>
+                                    
+                        <a title="Services" href="https://www.huntingdaledc.com.au/services/">Services</a>
+                        <hr>
+                                    
+                        <a title="Tips &#038; Advice" href="https://www.huntingdaledc.com.au/tips-and-advice/">Tips &#038; Advice</a>
+                        <hr>
+                                    
+                        <a title="About Us" href="https://www.huntingdaledc.com.au/about-us/">About Us</a>
+                        <hr>
+                                    
+                        <a title="Contact" href="https://www.huntingdaledc.com.au/contact/">Contact</a>
+                        <hr>
+                                    
+                        <a title="Costs And Special Offers" href="https://www.huntingdaledc.com.au/costs-and-special-offers/">Costs And Special Offers</a>
+                        <hr>
+                                    
+                    </div>
+
+                </div>
+
+
+                <div class="footer-section">
+                       
+                    <div class="">
+                        <h1>CONTACT US<hr></h1>
+                    </div>
+          
+                    <a itemprop="name">Huntingdale Dental Centre</a>
+    
+                    <a href="tel:(03) 9544 1222" title="(03) 9544 1222">(03) 9544 1222</a>
+           
+                    <a itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">1558 Dandenong Rd, Huntingdale (Corner Huntingdale Rd and Dandenong Rd)</a>
+
+                    <a href="mailto:&#99;&#111;ntact&#64;&#104;u&#110;&#116;&#105;&#110;g&#100;&#97;le&#100;&#99;&#46;c&#111;m.au" title="contact@huntingdaledc.com.au">&#99;ont&#97;&#99;&#116;&#64;h&#117;&#110;&#116;ingd&#97;&#108;ed&#99;&#46;&#99;o&#109;&#46;a&#117;</a>
+                    
+                    <a href="https://www.huntingdaledc.com.au" >https://www.huntingdaledc.com.au</a>
+                                   
+                </div>
+                    
+            </div>
+                
+            <div class="footer-wrap-2">
+
+                <div class="line"></div>
+
+                <div class="social-link">
+                <br>
+                <br>   
+                
+                    <a href="#"  class="fa fa-facebook" style="margin-left: 400px;margin-right: 50px;"></a>
+                    <a href="#" class="fa fa-twitter" style="margin-right: 50px;"></a>
+                    <a href="#" class="fa fa-pinterest" style="margin-right: 50px"></a>
+                    <a href="#"  class="fa fa-youtube-play"></a>
+                
+                </div>
+                <br>
+
+                <div class="line"></div>
+   
+            </div>     
+            
+            <div class="footer-bottom">
+                        
+                <div class="first-box">
+                    Copyright © 2022 
+                    <a href="https://www.huntingdaledc.com.au/" title="Huntingdale Dental Clinic" target="_blank">Huntingdale Dental Clinic</a>
+                </div>
+                <div class="secend-box">
+                    <a class="rtitle" title="Web Design Melbourne" href="https://www.platinumseoservices.com.au/responsive-web-design/" target="_blank">Web Design</a> and 
+                    <a target="_blank" href="https://www.platinumseoservices.com.au/" title="SEO Melbourne">SEO Melbourne</a> by 
+                    <a class="rtitle" title="Platinum SEO" href="https://www.platinumseo.com.au/" target="_blank">Platinumseo</a>
+                </div>
+                <div class="last-box">
+                    <b>Today's Date: </b>
+                    12th July 2022
+                </div>
+                        
+            </div>
+                
+        </div>
+
+
+    </div>
+
+    <script>
+        function mouseOver() {
+            document.getElementById("demo").style.color = "rgb(125, 61, 155)";
+        }
+        function mouseOut() {
+            document.getElementById("demo").style.color = "white";
+        }
+
+    </script>
+    
+</body>
+</html>
